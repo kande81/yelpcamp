@@ -50,6 +50,8 @@ const store = new mongodbStore({
 store.on("error", function (e) {
 	console.log("SESSION STORE ERROR", e)
 });
+
+app.set('trust proxy', 1);
 const sessionConfig = {
 	store,
 	mame: 'session', //setting a custom name for the session improves the security of the site //as the default name might be known by bad actors
