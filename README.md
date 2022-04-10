@@ -24,6 +24,7 @@
 - Mongo DB
 - Mongo Atlas
 - Mongoose
+- JSON
 - Cloudinary
 - Express-session
 - Passport
