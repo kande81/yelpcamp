@@ -178,8 +178,9 @@ app.use((err, req, res, next) => {
 console.log(process.env.NODE_ENV)
 
 
-app.listen(3000, () => {
-	console.log('listening on port 3000');
+const port = process.env.PORT || 3000,//process.env.PORT is a property that will present in heroku as the port it uses to listen. the || means or. So if the app can't find process.env.PORT our port variable will efault to 3000
+app.listen(port, () => {
+	console.log(`serving on port ${port}`);
 })
 
 //	const campground = await Campground.findById(req.params.id);
