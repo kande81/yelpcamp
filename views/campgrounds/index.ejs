@@ -33,10 +33,10 @@
 </div>
 		<% } %>
 	<script>
-	const mapToken = "<%- process.env.MAPBOX_TOKEN %>";
+	const mapToken = '<%-process.env.MAPBOX_TOKEN%>';
 	const campgrounds = {features:<%- JSON.stringify(campgrounds) %>}; //JSON.stringify converts //the data in campgrounds to json. Because when campground was saved with mongo it wasnt //saved //in json. The brackets and 'features:' turn campgrounds into an object with a //'features' key, //and JSON.stringify(campgrounds) is an array of objects; as that is how a //collection is saved //in mongo
 //	console.log(campgrounds);
 </script>
 
-	<script src="/javascripts/clusterMap.js"></script>
+	<script src="/javaScripts/clusterMap.js"></script>
 	
