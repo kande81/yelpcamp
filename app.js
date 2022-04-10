@@ -1,9 +1,7 @@
-//process.env.NODE_ENV is an environment variable that usually has a value of development or //production. So the below line is saying if we are in development mode require the 'dotenv' node //module. When 'dotenv' is required it will look in the '.env' file that we created and add the //variables that we defined in that file to process.env object in our node app. Then we can for //instance access process.env.SECRET. SECRET is the variable we defined in the .env file
-//if (process.env.NODE_ENV !== "PRODUCTION") {
-//	require('dotenv').config();
-//}
+//process.env.NODE_ENV is an environment variable that usually has a value of development or //production. So the below line is saying if we are in development mode require the 'dotenv' //node module. When 'dotenv' is required it will look in the '.env' file that we created and add //the //variables that we defined in that file to process.env object in our node app. Then we //can for //instance access process.env.SECRET. SECRET is the variable we defined in the .env //file
+if (process.env.NODE_ENV !== "production") {
 	require('dotenv').config();
-//process.env.NODE_ENV = 'production';
+}
 const express = require('express');
 const path = require('path'); 
 const mongoose = require('mongoose');
