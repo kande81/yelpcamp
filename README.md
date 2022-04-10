@@ -9,6 +9,10 @@
 - JAVASCRIPT
 - EJS
 
+## Architecture
+- MVC
+
+
 ## Functionalities of the app
 - User authentication (login and register)
 - User authorization (restricted areas for registered users only)
