@@ -51,7 +51,7 @@ store.on("error", function (e) {
 	console.log("SESSION STORE ERROR", e)
 });
 
-//app.set('trust proxy', 1);
+app.set('trust proxy', 1);
 const sessionConfig = {
 	store,
 	mame: 'session', //setting a custom name for the session improves the security of the site //as the default name might be known by bad actors
@@ -60,7 +60,7 @@ const sessionConfig = {
 	saveUninitialized: true,
 	cookie: {
 		httpOnly: true,//this makes our cookies onlly accessible through http and not //javascript.This is considered a security measure
-//		secure:true, // this means that the cookie can only work over https
+		secure:true, // this means that the cookie can only work over https
 		expires: Date.now() + 1000 * 60 * 60 * 24 * 7, // this sets the expiration date. it will //expire after date.now plus 1 week. So i.e after a week from the time the request is //received
 		maxAge: 1000 * 60 * 60 * 24 * 7 // this sets the max age to one week
 	}
