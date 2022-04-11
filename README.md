@@ -11,15 +11,19 @@
 
 ## Architecture
 - MVC
+- Restful routes
+- Full CRUD functionalities
 
 
 ## Functionalities of the app
 - User authentication (login and register)
 - User authorization (restricted areas for registered users only)
+- Responsive design
 - Leaving reviews
 - Star rating
 - Image uploads
 - Geo-coded maps 
+- Edit and delete created campgrounds
 
 ## Technologies
 - Bootstrap
